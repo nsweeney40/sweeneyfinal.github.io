@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Project</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <section id="top">
+        <div class="parallax">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse">
+              <span class="sr-only">toggle navigation</span>
+              <span class="icon bar"></span>
+              <span class="icon bar"></span>
+              <span class="icon bar"></span>
+            </button>
+                        <a class="navbar-brand" href="#"></a>
+
+                        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="home">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#projects">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#about">About</a>
+                                </li>
+                                <li>
+                                    <a href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+
+            <div class="start">
+                <h1 class="animated fadeInDown">NATHAN SWEENEY'S PORTFOLIO</h1>
+            </div>
+            </div>
+    </section>
+    <main>
+        <div class="container-fluid">
+
+            <section id="about">
+                <div class="row">
+                    <div id="top">
+                        <div class="col-xs-12">
+                            <h3>About</h3>
+                            <p>Studied at ACC briefly and currently attedning Austin Coding Academy. Currently employed by Mandolas Italian Market in Bee Cave, TX. Learning web development because of the increasingly high demand for the skill.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="mandolas">
+                            <div class="mid col-md-6 col-sm-12 col-xs-12">
+                                <a href="http://www.mandolasmarket.com/"><img class="mandolas" src="img/mandolaslogo.png"></a>
+                            </div>
+                        </div>
+                        <div id="map">
+                            <div class="right col-md-6 col-sm-12 col-xs-12">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.6108131883652!2d-97.94407814935309!3d30.305139281698853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b37ebeea4ef3d%3A0x2349da1e5791d254!2sMandola&#39;s+Italian!5e0!3m2!1sen!2sus!4v1482442644623"
+                                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div </section>
+
+                    <section id="projects">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="garden">
+                                    <div class="left col-md-4 col-sm-4 col-xs-12">
+                                        <a href="/../07Lesson/01Gardenproject"><img src="img/ss4.png"></a>
+                                    </div>
+                                </div>
+                                <div class="wine">
+                                    <div class="mid col-md-4 col-sm-4 col-xs-12">
+                                        <a href="/../07Lesson/01Homework"><img src="img/ss1.png"></a>
+                                    </div>
+                                </div>
+
+                                <div class="blog">
+                                    <div class="right col-md-4 col-sm-4 col-xs-12">
+                                        <a href="/../06Lesson/01Project"><img src="img/ss2.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div </section>
+                        <div class="row">
+                            <div class="slides col-md-12 col-sm-12 col-xs-12">
+                                <div class="w3-content w3-display-container">
+                                    <img class="mySlides" src="img/ss1.png" style="width:100%">
+                                    <img class="mySlides" src="img/ss2.png" style="width:100%">
+                                    <img class="mySlides" src="img/ss3.png" style="width:100%">
+                                    <img class="mySlides" src="img/ss4.png" style="width:100%">
+
+                                    <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+                                    <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+                                </div>
+
+                                <script>
+                                    var slideIndex = 1;
+                                    showDivs(slideIndex);
+
+                                    function plusDivs(n) {
+                                        showDivs(slideIndex += n);
+                                    }
+
+                                    function showDivs(n) {
+                                        var i;
+                                        var x = document.getElementsByClassName("mySlides");
+                                        if (n > x.length) {
+                                            slideIndex = 1
+                                        }
+                                        if (n < 1) {
+                                            slideIndex = x.length
+                                        }
+                                        for (i = 0; i < x.length; i++) {
+                                            x[i].style.display = "none";
+                                        }
+                                        x[slideIndex - 1].style.display = "block";
+                                    }
+                                </script>
+                            </div>
+                        </div>
+
+                        <footer>
+                            <div id="contact">
+                                <!--
+  <div class="row">
+    <div class="email col-md-12">
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSdYdX1Eo0sAU6YohWAwAVG6uGrKlJeW1BFGpi9iG7U31oDjBw/formResponse"
+method="POST" target="_self" onsubmit="">
+  <label for="entry_2054467513">What do you recommend?</label>
+  <input type="text" name="entry.2054467513"
+  value="" dir="auto" aria-label="What do you recommend?  " title="">
+  <input type="hidden" name="draftResponse" value="[,,&quot;2616044317516922262&quot;]
+">
+  <input type="hidden" name="pageHistory" value="0">
+  <input type="hidden" name="fbzx" value="2616044317516922262">
+  <label for="emailReceipt" style="display:inline;"></label>
+  <input type="submit" name="submit" value="Submit">
+</form>
+-->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-offset-3 col-md-6 col-sm-12">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <div id="box">
+                                                        <h2 class="panel-title"><i class="fa fa-envelope"></i>Feedback</h2>
+
+                                                        <div class="panel-body">
+                                                            <form action="https://docs.google.com/forms/d/e/1FAIpQLSchZmTh0D0L6vlCE0VcHroOVhWdBG6P0uu8wtmXfgI9NKxS1Q/formResponse" method="POST" target="_self" onsubmit="">
+                                                                <div class="form-group">
+                                                                    <label for="entry_2054467513"> What do you recommend?</label>
+                                                                    <input type="email" class="form-control" type="text" id="entry_352836860" name="entry.352836860" value="" dir="auto" aria-label="What is your email? " placeholder="ex. johndoe@mail.com" title="">
+                                                                </div>
+                                                                <input type="hidden" name="draftResponse" value="[,,&quot;1062011645707675271&quot;]
+  ">
+                                                                <input type="hidden" name="pageHistory" value="0">
+                                                                <input type="hidden" name="fbzx" value="1062011645707675271">
+                                                                <input type="submit" name="submit" value="Send it!" class="btn btn-default btn-primary btn-lg btn-block">
+                                                            </form>
+                        </footer>
+
+                        </div>
+                        </div>
+                        <script>
+                            $('.animated').click(function() {
+                                var heading = $(this)
+                                heading.removeClass('bounce');
+                                setTimeout(function() {
+                                    heading.addClass('bounce');
+                                }, 10);
+                            });
+                        </script>
+                        <!--this is where jquery begins -->
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+                        <!--bootstrap CDN script-->
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                        </div>
+</body>
+
+</html>
